@@ -6,7 +6,7 @@ class Tests(unittest.TestCase):
 
     # check c_to_f returns correct values
     def test_c_to_f(self):
-        self.assertEqual(20.5, temp_converter.c_to_f(68.9))
+        self.assertEqual(68.9, temp_converter.c_to_f(20.5))
 
     # check f_to_c returns correct value
     def test_f_to_c(self):
