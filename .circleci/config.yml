@@ -31,5 +31,4 @@ jobs:
           name: runnung tests
           command: |
             . venv/bin/activate
-            flake8 --statistics
             python tests.py 
