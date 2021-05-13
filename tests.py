@@ -14,7 +14,7 @@ class Tests(unittest.TestCase):
         self.assertEqual(0, temp_converter.f_to_c(32))
 
     def test_km_to_m(self):
-        self.assertEqual(3, distance_converter(3000))
+        self.assertEqual(3, distance_converter.km_to_m(3000))
 
 if __name__ == '__main__':
     unittest.main()
