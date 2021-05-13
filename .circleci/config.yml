@@ -1,0 +1,35 @@
+# Python CircleCI configuration file
+version: 2
+
+# jobs the build server will perform 
+jobs:
+
+  build:
+
+    # build a docker image with circleci and python 8
+    docker:
+      - image: circleci/python:3.8
+
+    # create a new working directory in the container
+    working_directory: ~/app
+
+    # inside the terminal of the working directory
+    steps:
+      # obtain repo from github
+      - checkout
+
+      # run cli commands on the container
+      - run:
+        name: install dependencies #optional
+        command: |
+        python3 -m venv venv
+        . venv/bin/activate
+        pip install -r requirements.txt
+
+      # run tests
+      - run :
+        name: runnung tests
+        command: |
+        . venv/bin/activate
+        flake8 --statistics
+        python tests.py
