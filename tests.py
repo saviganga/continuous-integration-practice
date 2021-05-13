@@ -1,6 +1,6 @@
 import unittest
 import temp_converter
-import distance_converer
+import distance_converter
 
 class Tests(unittest.TestCase):
 
