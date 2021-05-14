@@ -16,5 +16,8 @@ class Tests(unittest.TestCase):
     def test_km_to_m(self):
         self.assertEqual(3, distance_converter.km_to_m(3000))
 
+    def test_m_to_km(self):
+        self.assertEqual(15, distance_converter.m_to_km(15000))
+
 if __name__ == '__main__':
     unittest.main()
