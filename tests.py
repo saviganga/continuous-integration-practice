@@ -4,7 +4,7 @@ import distance_converter
 
 class Tests(unittest.TestCase):
 
-    # check c_to_f returns correct values
+    # check celcius_to_fahrenheit returns correct values
     def test_c_to_f(self):
         self.assertEqual(68.9, temp_converter.c_to_f(20.5))
 
